@@ -21,12 +21,6 @@ async function  createAddress(){
     console.log(`已创建钱包数量:${num}`);
     fs.writeFileSync(`./${wallet.address.base58}.json`,JSON.stringify(wallet));
   }
-  // createAddress();
-  if(lastworld.toLowerCase()=='hash315' || lastworld.toUpperCase()=="HASH315"){
-    console.log(`可用钱包出现:${wallet.address.base58}`);
-    console.log(`已创建钱包数量:${num}`);
-    fs.writeFileSync(`./${wallet.address.base58}.json`,JSON.stringify(wallet));
-  }
   createAddress();
 
 }
